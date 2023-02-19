@@ -111,7 +111,56 @@
 
 
     </seccion>
+
+
+    <section id="section2">
+      <div class="container comentario">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Usuarios</th>
+              <th scope="col">Comentarios</th>
+            </tr>
+          </thead>
+          <tbody id="tabla1"></tbody>
+        </table>
+
+       
+      </div>
+    </section>
+
+    <!-- comentarios -->
+    <section id="section1">
+      <div class="container container2">
+        <form>
+          <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Name</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre_usuario"
+              aria-describedby="emailHelp"
+            />
+
+            <labe>I'll read all your comments :)</labe>
+          </div>
+
+          <div>
+            <textarea
+              id="comentario_usuario"
+              placeholder="Insert your coment :)"
+            ></textarea>
+          </div>
+
+          <button class="btn btn-primary" onclick="guardar()">Send</button>
+        </form>
+      </div>
+    </section>
   </body>
+
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
 
   <script
     src="https://kit.fontawesome.com/d4c6b2d63e.js"
@@ -123,4 +172,7 @@
     crossorigin="anonymous"
   ></script>
   <script src="index.js"></script>
+  <script src="./base/config.js"></script>
+  <script src="./base/guardar.js"></script>
+  <script src="./base/ver.js"></script>
 </html>

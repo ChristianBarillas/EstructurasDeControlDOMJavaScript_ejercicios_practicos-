@@ -99,3 +99,31 @@ segunda parte de los ejercicio */
 
     height: 400px;
 }
+
+
+.comentario {
+    height: 400px;
+  }
+  
+  
+  #tabla1 tr{
+  
+    text-align: center;
+   
+  
+  
+  
+    
+  }
+  
+  
+  .table th{
+  
+  
+    text-align: center;
+    color: rgb(2, 58, 147);
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  
