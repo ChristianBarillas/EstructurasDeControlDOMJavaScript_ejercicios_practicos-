@@ -1,22 +1,22 @@
 
-// var tabla = document.getElementById('tabla1');
+var tabla = document.getElementById('tabla1');
 
 
 
-//     db.collection("").onSnapshot((querySnapshot) => {
-//         tabla.innerHTML = '';
-//         querySnapshot.forEach((doc) => {
+    db.collection("usuarios").onSnapshot((querySnapshot) => {
+        tabla.innerHTML = '';
+        querySnapshot.forEach((doc) => {
 
-//             tabla.innerHTML +=
+            tabla.innerHTML +=
             
-//             `
-//             <tr>
+            `
+            <tr>
         
-//             <td>${doc.data().nombre}</td>
-//             <td>${doc.data().comentario}</td>
+            <td>${doc.data().nombre}</td>
+            <td>${doc.data().comentario}</td>
           
-//           </tr>
-//             `
+          </tr>
+            `
 
           
 
@@ -25,6 +25,6 @@
 
 
 
-//         });
-//     });
+        });
+    });
 
