@@ -41,7 +41,9 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#section1">Comprobador de Edad</a>
+              <a class="nav-link active" aria-current="page" href="#section1"
+                >Comprobador de Edad</a
+              >
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#section2">Caculador de notas</a>
@@ -54,69 +56,143 @@
       </div>
     </nav>
 
-
-
-
-<!-- comprobador de edad -->
+    <!-- comprobador de edad -->
 
     <section id="section1">
       <div class="container">
+        <span>Comprobador de edad </span>
         <div class="calculador-edad">
-            <i class="fa-regular fa-face-smile"></i>
+          <i class="fa-regular fa-face-smile"></i>
           <input type="number" placeholder="Inserte su edad" />
           <button class="fa-solid fa-magnifying-glass"></button>
         </div>
 
         <div class="datos-edad">
-            <div class="icono">
+          <div class="icono">
             <i class="fa-solid fa-baby"></i>
-        </div>
+          </div>
           <p class="resultado"></p>
         </div>
+      </div>
+    </section>
 
-        
+    <!--Calculador de notas-->
+
+    <section id="section2">
+      <div class="container container2">
+        <span>Calculador de notas</span>
+        <div class="notas-estudiante">
+          <input
+            type="text"
+            placeholder="Nombre del estudiante"
+            id="nombre-estudiante"
+          />
+          <input
+            type="text"
+            placeholder="Carnet del estudiante"
+            id="carnet-estudiante"
+          />
+
+          <input type="number" placeholder="Examen" class="examen" />
+          <input type="number" placeholder="Tareas" class="tareas" />
+          <input type="number" placeholder="Asistencia" class="asistencia" />
+          <input
+            type="number"
+            placeholder="Investigacion"
+            class="investigacion"
+          />
+          <button
+            type="button"
+            class="fa-solid fa-magnifying-glass"
+            onclick="actualizarDatos()"
+          ></button>
+        </div>
+
+        <div class="detalles-notas">
+          <p class="estudiante-note"></p>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- calculador de aumento salarial -->
+
+    <section id="section3">
+      <div class="container container2">
+        <span> Calculador de aumento salarial</span>
+        <div class="categorias-trabajo">
+          <input
+            type="text"
+            placeholder="Nombre completo"
+            class="nombre-trabajador"
+          />
+
+          <select name="categoria" id="categoria">
+            <option selected>Seleccione una categoria</option>
+            <option value="ingeniero">Ingeniero</option>
+            <option value="traductor">Traductor</option>
+            <option value="abogado">Abogado</option>
+            <option value="medico">Medico</option>
+          </select>
+
+          <input
+            type="number"
+            placeholder="Digite el salario"
+            class="salario"
+          />
+
+          <button
+            class="fa-solid fa-wind"
+            onclick="categoriaSalario()"
+          ></button>
+
+          <p class="data-aumento"></p>
+        </div>
+
+        <div class="detalles-notas">
+          <p class="estudiante-note"></p>
+        </div>
       </div>
     </section>
 
 
 
 
-<!--Calculador de notas-->
+<!-- calculador de numero mayor o menor -->
 
-    <section id="section2">
+    <section id="section4">
+      <div class="container container2">
+        <span> Comprobador de numero mayor</span>
+        <div class="numero-valores">
 
-    <div class="container container2">
+      
+          <input
+            type="text"
+            placeholder="Ingrese numero mayor"
+            class="numero-mayor"
+          />
 
-        <div class="notas-estudiante ">
+          <input
+            type="number"
+            placeholder="Ingrese numero menor"
+            class="numero-menor"
+          />
 
-          <input type="text" placeholder="Nombre del estudiante" id="nombre-estudiante">
-          <input type="text" placeholder="Carnet del estudiante" id="carnet-estudiante">
+          <button class="fa-solid fa-wind" onclick="mostrarMayor()" ></button>
 
-            <input type="number" placeholder="Examen" class="examen">
-            <input type="number" placeholder="Tareas" class="tareas">
-            <input type="number" placeholder="Asistencia" class="asistencia">
-            <input type="number" placeholder="Investigacion" class="investigacion">
-            <button type="button" class="fa-solid fa-magnifying-glass" onclick="actualizarDatos()"></button>
-          
-
+          <p class="data-numeros"></p>
         </div>
-
-        <div class="detalles-notas">
-          <p class="estudiante-note"></p>
- 
-        </div>
-
-
-    </div>
+      </div>
+    </section>
 
 
 
 
 
-    </seccion>
+<!-- comentarios formulario  -->
 
-
-    <section id="section2">
+    <section id="section5">
       <div class="container comentario">
         <table class="table">
           <thead>
@@ -127,13 +203,11 @@
           </thead>
           <tbody id="tabla1"></tbody>
         </table>
-
-       
       </div>
     </section>
 
     <!-- comentarios -->
-    <section id="section1">
+    <section id="section6">
       <div class="container container2">
         <form>
           <div class="mb-3">
@@ -175,6 +249,12 @@
     crossorigin="anonymous"
   ></script>
   <script src="index.js"></script>
+  <script src="./ejecicios/ejecicio1.js"></script>
+  <script src="./ejecicios/ejercicio2.js"></script>
+  <script src="./ejecicios/ejecicio3.js"></script>
+  <script src="./ejecicios/ejecicio4.js"></script>
+
+  <!-- logica formulario  -->
   <script src="./base/config.js"></script>
   <script src="./base/guardar.js"></script>
   <script src="./base/ver.js"></script>
