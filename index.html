@@ -130,10 +130,11 @@
 
           <select name="categoria" id="categoria">
             <option selected>Seleccione una categoria</option>
-            <option value="ingeniero">Ingeniero</option>
-            <option value="traductor">Traductor</option>
-            <option value="abogado">Abogado</option>
-            <option value="medico">Medico</option>
+            <option value="ingeniero">Ingeniero (30% aumento)</option>
+            <option value="medico">Medico (20% aumento)</option>
+            <option value="traductor">Traductor (15% aumento)</option>
+            <option value="abogado">Abogado (10% aumento)</option>
+            
           </select>
 
           <input
@@ -187,12 +188,51 @@
     </section>
 
 
+<!-- calculador de coche -->
+
+    <section id="section5">
+      <div class="container container2">
+        <span> Calculador de descuento en coche</span>
+        <div class="categorias-trabajo">
+         
+
+          <select name="carros" id="carros">
+            <option selected>Seleccione una categoria</option>
+            <option value="fordfiesta">Ford fiesta (5% descuento)</option>
+            <option value="fordfocus">Fordfocus (10% descuento)</option>
+            <option value="fordescape">Ford escape (20% descuento)</option>
+           
+          </select>
+
+          <input
+            type="number"
+            placeholder="Precio del coche"
+            class="precio-coche"
+          />
+
+          <button
+            class="fa-solid fa-wind"
+            onclick="infoCoche()"
+          ></button>
+
+          <img src="" alt="Carro" class="imagenes">
+
+          <p class="data-coche"></p>
+        </div>
+
+        <div class="detalles-notas">
+          <p class="estudiante-note"></p>
+        </div>
+      </div>
+    </section>
+
+
 
 
 
 <!-- comentarios formulario  -->
 
-    <section id="section5">
+    <section id="section6">
       <div class="container comentario">
         <table class="table">
           <thead>
@@ -207,7 +247,7 @@
     </section>
 
     <!-- comentarios -->
-    <section id="section6">
+    <section id="section7">
       <div class="container container2">
         <form>
           <div class="mb-3">
@@ -253,6 +293,7 @@
   <script src="./ejecicios/ejercicio2.js"></script>
   <script src="./ejecicios/ejecicio3.js"></script>
   <script src="./ejecicios/ejecicio4.js"></script>
+  <script src="./ejecicios/ejecicio5.js"></script>
 
   <!-- logica formulario  -->
   <script src="./base/config.js"></script>
