@@ -41,22 +41,35 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#section1"
-                >Comprobador de Edad</a
+              <a class="nav-link active" aria-current="page" href="#"
+                >Comprobador Edad</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#section2">Caculador de notas</a>
+              <a class="nav-link" href="#section2">Caculador Notas</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Carros</a>
+              <a class="nav-link" href="#section3">Aumento Salarial</a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section4">Comprobador Numeros</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section5">Descuento Coche</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section6">Descuento Turistico</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#section7">Comentarios</a>
+            </li>
+           
           </ul>
         </div>
       </div>
     </nav>
 
-    <!-- comprobador de edad -->
+    <!-- comprobador de edad ejercicio1 -->
 
     <section id="section1">
       <div class="container">
@@ -76,7 +89,7 @@
       </div>
     </section>
 
-    <!--Calculador de notas-->
+    <!--Calculador de notas ejercico 2 -->
 
     <section id="section2">
       <div class="container container2">
@@ -114,9 +127,7 @@
       </div>
     </section>
 
-
-
-    <!-- calculador de aumento salarial -->
+    <!-- calculador de aumento salarial ejercico 3 -->
 
     <section id="section3">
       <div class="container container2">
@@ -134,7 +145,6 @@
             <option value="medico">Medico (20% aumento)</option>
             <option value="traductor">Traductor (15% aumento)</option>
             <option value="abogado">Abogado (10% aumento)</option>
-            
           </select>
 
           <input
@@ -157,17 +167,12 @@
       </div>
     </section>
 
-
-
-
-<!-- calculador de numero mayor o menor -->
+    <!-- calculador de numero mayor o menor ejercicio 4 -->
 
     <section id="section4">
       <div class="container container2">
         <span> Comprobador de numero mayor</span>
         <div class="numero-valores">
-
-      
           <input
             type="text"
             placeholder="Ingrese numero mayor"
@@ -180,42 +185,35 @@
             class="numero-menor"
           />
 
-          <button class="fa-solid fa-wind" onclick="mostrarMayor()" ></button>
+          <button class="fa-solid fa-wind" onclick="mostrarMayor()"></button>
 
           <p class="data-numeros"></p>
         </div>
       </div>
     </section>
 
-
-<!-- calculador de coche -->
+    <!-- calculador de coche ejercicio 5  -->
 
     <section id="section5">
       <div class="container container2">
         <span> Calculador de descuento en coche</span>
         <div class="categorias-trabajo">
-         
-
           <select name="carros" id="carros">
             <option selected>Seleccione una categoria</option>
             <option value="fordfiesta">Ford fiesta (5% descuento)</option>
             <option value="fordfocus">Fordfocus (10% descuento)</option>
             <option value="fordescape">Ford escape (20% descuento)</option>
-           
           </select>
 
           <input
             type="number"
-            placeholder="Precio del coche"
+            placeholder="precio-coche"
             class="precio-coche"
           />
 
-          <button
-            class="fa-solid fa-wind"
-            onclick="infoCoche()"
-          ></button>
+          <button class="fa-solid fa-wind" onclick="infoCoche()"></button>
 
-          <img src="" alt="Carro" class="imagenes">
+          <img src="" alt="Carro" class="imagenes" />
 
           <p class="data-coche"></p>
         </div>
@@ -226,14 +224,39 @@
       </div>
     </section>
 
-
-
-
-
-<!-- comentarios formulario  -->
+    <!-- descuento de viajes turisticos  ejercico 6 -->
 
     <section id="section6">
+      <div class="container container2">
+        <span> Calculador de descuento turistico</span>
+        <div>
+          <select name="turistico" id="turistico-playa">
+            <option selected>Seleccione una categoria</option>
+            <option value="costasol">La costa del sol (5% descuento)</option>
+            <option value="panchimalco">Panchimalco (10% descuento)</option>
+            <option value="puertotriunfo">
+              Puerto el Triunfo (15% descuento)
+            </option>
+          </select>
+
+          <input
+            type="number"
+            placeholder="Digite la cantidad"
+            class="precio-turismo"
+          />
+
+          <button class="fa-solid fa-wind" onclick="infoTurismo()"></button>
+
+          <p class="data-turismo"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- comentarios formulario  -->
+
+    <section id="section7">
       <div class="container comentario">
+        <p>Version beta</p>
         <table class="table">
           <thead>
             <tr>
@@ -247,7 +270,7 @@
     </section>
 
     <!-- comentarios -->
-    <section id="section7">
+    <section id="section8">
       <div class="container container2">
         <form>
           <div class="mb-3">
@@ -268,8 +291,6 @@
               placeholder="Insert your coment :)"
             ></textarea>
           </div>
-
-        
         </form>
         <button class="btn btn-primary" onclick="guardar()">Send</button>
       </div>
@@ -295,6 +316,7 @@
   <script src="./ejecicios/ejecicio3.js"></script>
   <script src="./ejecicios/ejecicio4.js"></script>
   <script src="./ejecicios/ejecicio5.js"></script>
+  <script src="./ejecicios/ejercico6.js"></script>
 
   <!-- logica formulario  -->
   <script src="./base/config.js"></script>

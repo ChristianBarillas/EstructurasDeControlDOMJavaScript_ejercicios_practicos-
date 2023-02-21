@@ -8,8 +8,6 @@ const imagen =  document.querySelector('.imagenes');
 
 
 
-console.log(imagen)
-
 
 
 // creado funcion que maneje los datos previos
