@@ -257,7 +257,13 @@
       <div class="container container2">
         <span> Calculador Examenes (porcentaje)</span>
 
-        <input type="number" placeholder="Ponderado % (1-100*)" class="ponderado1" />
+        <div>
+
+        <input
+          type="number"
+          placeholder="Ponderado % (1-100*)"
+          class="ponderado1"
+        />
 
         <input
           type="number"
@@ -265,7 +271,11 @@
           class="cantidad-digitada1"
         />
 
-        <input type="number" placeholder="Ponderado % (1-100*)" class="ponderado2" />
+        <input
+          type="number"
+          placeholder="Ponderado % (1-100*)"
+          class="ponderado2"
+        />
 
         <input
           type="number"
@@ -276,6 +286,22 @@
         <button class="fa-solid fa-wind" onclick="mostrarPonderado()"></button>
 
         <p class="data-ponderado"></p>
+
+      </div>
+      </div>
+    </section>
+
+    <!-- conversor de temperatura  -->
+
+    <section id="section8">
+      <div class="container container2">
+        <span> Conversor temperatura a farenheit</span>
+
+        <input type="number" placeholder="Celsius (Grados)" class="celsius" />
+
+        <button class="fa-solid fa-wind" onclick="mostrarGrados()"></button>
+
+        <p class="data-grados"></p>
       </div>
     </section>
 
@@ -345,6 +371,7 @@
   <script src="./ejecicios/ejecicio5.js"></script>
   <script src="./ejecicios/ejercico6.js"></script>
   <script src="./ejecicios/ejercicio7.js"></script>
+  <script src="./ejecicios/ejercicio8.js"></script>
 
   <!-- logica formulario  -->
   <script src="./base/config.js"></script>

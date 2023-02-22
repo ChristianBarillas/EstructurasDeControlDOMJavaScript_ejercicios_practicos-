@@ -17,48 +17,48 @@ const dataPonderado = document.querySelector('.data-ponderado');
 // creado funcion que maneje los datos previos
 
 
-function mostrarPonderado (){
+function mostrarPonderado() {
 
 
 
-if (cantidad1.value & cantidad2.value & ponderado1.value & ponderado2.value >= 0){
+        if (cantidad1.value & cantidad2.value || ponderado1.value & ponderado2.value >= 0) {
 
 
 
-        let result = cantidad1.value * (ponderado1.value/100);
-        
-   
+                let result = cantidad1.value * (ponderado1.value / 100);
 
 
-        let result2 = cantidad2.value * (ponderado2.value/100);
-        
-        
+
+
+                let result2 = cantidad2.value * (ponderado2.value / 100);
+
+
                 let promedio = (result + result2)
-        
+
                 dataPonderado.innerHTML = `El promedio de su notas es: ${promedio}`;
-        
-        
-        
-          
-             
-            
+
+
+
+
+
+
+
+        }
+
+
+        else {
+
+                alert('Porfavor digita un valor valido!')
+        }
+
+
+
 
 }
 
 
-else {
-
-        alert('Porfavor digita un valor valido!')
-}
 
 
-     
-
-    }
-
-
-
-   
 
 
 
