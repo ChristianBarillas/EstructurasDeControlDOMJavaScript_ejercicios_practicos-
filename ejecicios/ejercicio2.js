@@ -21,7 +21,7 @@ investigacion = document.querySelector('.investigacion').value;
 }
 
 
-//se puede optimizar un poco mas para definir exactamente los input
+//se puede optimizar un poco mas para definir exactamente los input 
 var input = document.getElementsByTagName("input");
 
 for (i=0; i<input.length; i++) {
