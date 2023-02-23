@@ -5,7 +5,7 @@ const dataGrados = document.querySelector('.data-grados');
 
 class Temperatura {
 
-   #prueba
+
     constructor(celsius){
         
         this.celsius = celsius;
@@ -33,7 +33,7 @@ const mostrarGrados =() =>{
    
    let result = grados.obtenerdato(celsius.value)
 
-   dataGrados.innerHTML = `La temperatura en farenheit es ${result}`
+   dataGrados.innerHTML = `La temperatura en farenheit es ${result} F`
 
 }
    

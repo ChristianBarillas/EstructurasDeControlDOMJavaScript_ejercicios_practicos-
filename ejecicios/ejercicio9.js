@@ -1,58 +1,37 @@
-// Calculador de notas
+const valorInput = document.querySelectorAll('.carga-valores');
+const contenedor = document.querySelector('.data-ejercicio9');
 
-//variables globales los addvenlistener no pueden retornar solo modificar variables globales
-var cargaValores;
-var resultado;
+let valores = [];
+let cantNegativos = 0;
+let cantPositivos = 0;
+let cantMultiplos15 = 0;
+let acumPares = 0;
 
-var r = [];
-function obtenerDatos( ) {
-
-
-
-cargaValores = document.querySelector('.carga-valores').value;
-
-
-  r = [cargaValores];
- 
-    return r
-}
-
-
-//se puede optimizar un poco mas para definir exactamente los input 
-var cargaValores = document.querySelector('.carga-valores').value;
-
-for (i=0; i<cargaValores.length; i++) {
-    cargaValores[i].addEventListener("change",  function(){
-  resultados = obtenerDatos();
- 
- });
-};
-
-// const parrafo = document.querySelector('.estudiante-note')
-// const carnet = document.querySelector('#carnet-estudiante')
-// const nombreEstudiante = document.querySelector('#nombre-estudiante')
-// let fragment = document.createDocumentFragment();
-
-let misdatos = [];
-
-// se podria poner un boton con la funcion actualizar datos en vez de utilizar un set interval para optimizarlo
-//quizas se podria usar el request animation frame
-
-function mostrarCarga() {
-
-    
-    misdatos = obtenerDatos();
- 
-    // promedio = (parseFloat(misdatos[0])*20)/100 + (parseFloat(misdatos[1]) * 40 )/100 + (parseFloat(misdatos[2]) * 10)/100 + (parseFloat(misdatos[3])*30)/100;
-    
-    // parrafo.innerHTML = `Estudiante: ${nombreEstudiante.value} <br> Carnet: ${carnet.value} <br> Nota promedio: ${promedio} `
-    console.log(mostrarCarga())
-   
-
+// Se cargan los valores por teclado
+function capturar() {
+  for(let i = 0; i < valorInput.length; i++) {
+    let valor = parseInt(valorInput[i].value);
+    valores.push(valor);
+  
+    // Se realizan las comprobaciones correspondientes
+    if(valor < 0) {
+      cantNegativos++;
+    } else if(valor > 0) {
+      cantPositivos++;
+    }
+  
+    if(valor % 15 === 0) {
+      cantMultiplos15++;
+    }
+  
+    if(valor % 2 === 0) {
+      acumPares += valor;
+    }
   }
-
-
   
-//   setInterval(actualizarDatos, 5000);
-
-  
+  // Se muestran los resultados
+  contenedor.innerHTML = `Cantidad de valores negativos: ${cantNegativos}<br>`;
+  contenedor.innerHTML += `Cantidad de valores positivos: ${cantPositivos}<br>`;
+  contenedor.innerHTML += `Cantidad de múltiplos de 15: ${cantMultiplos15}<br>`;
+  contenedor.innerHTML += `Valor acumulado de los números pares: ${acumPares}<br>`;
+}
