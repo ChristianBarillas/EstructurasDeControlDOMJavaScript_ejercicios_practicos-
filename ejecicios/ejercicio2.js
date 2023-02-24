@@ -47,7 +47,7 @@ function actualizarDatos() {
     misdatos = obtenerDatos();
     promedio = (parseFloat(misdatos[0])*20)/100 + (parseFloat(misdatos[1]) * 40 )/100 + (parseFloat(misdatos[2]) * 10)/100 + (parseFloat(misdatos[3])*30)/100;
     
-    parrafo.innerHTML = `Estudiante: ${nombreEstudiante.value} <br> Carnet: ${carnet.value} <br> Nota promedio: ${promedio} `
+    parrafo.innerHTML = `Estudiante: ${nombreEstudiante.value} <br> Carnet: ${carnet.value} <br> NotaPromedio: ${promedio} `
 
    
 
