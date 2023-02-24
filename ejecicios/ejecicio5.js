@@ -27,6 +27,8 @@ let fordescape = 0.20;
         
         dataCoche.innerHTML = `El descuento es: ${result}$`;
 
+        
+
        imagen.setAttribute( 'src','./media/ford1.png')
 
         // dataCoche.innerHTML = `El descuento es: ${result}$`;

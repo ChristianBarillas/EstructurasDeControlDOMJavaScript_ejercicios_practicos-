@@ -75,7 +75,6 @@
             <li class="nav-item">
               <a class="nav-link" href="#section11">Comentarios</a>
             </li>
-            
           </ul>
         </div>
       </div>
@@ -197,7 +196,10 @@
             class="numero-menor"
           />
 
-          <button class="fa-solid fa-magnifying-glass lupa" onclick="mostrarMayor()"></button>
+          <button
+            class="fa-solid fa-magnifying-glass lupa"
+            onclick="mostrarMayor()"
+          ></button>
 
           <p class="data-numeros"></p>
         </div>
@@ -223,9 +225,12 @@
             class="precio-coche"
           />
 
-          <button class="fa-solid fa-magnifying-glass lupa" onclick="infoCoche()"></button>
+          <button
+            class="fa-solid fa-magnifying-glass lupa"
+            onclick="infoCoche()"
+          ></button>
 
-          <img src="" alt="Carro" class="imagenes" />
+          <img class="imagenes" />
 
           <p class="data-coche"></p>
         </div>
@@ -257,7 +262,10 @@
             class="precio-turismo"
           />
 
-          <button class="fa-solid fa-magnifying-glass lupa" onclick="infoTurismo()" ></button>
+          <button
+            class="fa-solid fa-magnifying-glass lupa"
+            onclick="infoTurismo()"
+          ></button>
 
           <p class="data-turismo"></p>
         </div>
@@ -271,36 +279,37 @@
         <span> Calculador Examenes (porcentaje)</span>
 
         <div>
+          <input
+            type="number"
+            placeholder="Ponderado % (1-100*)"
+            class="ponderado1"
+          />
 
-        <input
-          type="number"
-          placeholder="Ponderado % (1-100*)"
-          class="ponderado1"
-        />
+          <input
+            type="number"
+            placeholder="Examen1 (1-10*)"
+            class="cantidad-digitada1"
+          />
 
-        <input
-          type="number"
-          placeholder="Examen1 (1-10*)"
-          class="cantidad-digitada1"
-        />
+          <input
+            type="number"
+            placeholder="Ponderado % (1-100*)"
+            class="ponderado2"
+          />
 
-        <input
-          type="number"
-          placeholder="Ponderado % (1-100*)"
-          class="ponderado2"
-        />
+          <input
+            type="number"
+            placeholder="Emanen2 (1-10*)"
+            class="cantidad-digitada2"
+          />
 
-        <input
-          type="number"
-          placeholder="Emanen2 (1-10*)"
-          class="cantidad-digitada2"
-        />
+          <button
+            class="fa-solid fa-magnifying-glass lupa"
+            onclick="mostrarPonderado()"
+          ></button>
 
-        <button class="fa-solid fa-magnifying-glass lupa" onclick="mostrarPonderado()"></button>
-
-        <p class="data-ponderado"></p>
-
-      </div>
+          <p class="data-ponderado"></p>
+        </div>
       </div>
     </section>
 
@@ -312,76 +321,105 @@
 
         <input type="number" placeholder="Celsius (Grados)" class="celsius" />
 
-        <button class="fa-solid fa-magnifying-glass lupa" onclick="mostrarGrados()"></button>
+        <button
+          class="fa-solid fa-magnifying-glass lupa"
+          onclick="mostrarGrados()"
+        ></button>
 
         <p class="data-grados"></p>
       </div>
     </section>
 
-
-
     <!-- ejericio 9 -->
     <section id="section9">
       <div class="container container2">
         <span>Carga de valores</span>
-<div>
-        <input type="number" placeholder="Ingrese valor1" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor2" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor3" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor4" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor5" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor6" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor7" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor8" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor9" class="carga-valores" />
-        <input type="number" placeholder="Ingrese valor10" class="carga-valores" />
-        
+        <div>
+          <input
+            type="number"
+            placeholder="Ingrese valor1"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor2"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor3"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor4"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor5"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor6"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor7"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor8"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor9"
+            class="carga-valores"
+          />
+          <input
+            type="number"
+            placeholder="Ingrese valor10"
+            class="carga-valores"
+          />
 
+          <button
+            class="fa-solid fa-magnifying-glass lupa"
+            onclick="capturar()"
+          ></button>
 
-        <button class="fa-solid fa-magnifying-glass lupa" onclick="capturar()"></button>
-
-        <p class="data-ejercicio9"></p>
-
-      </div>
+          <p class="data-ejercicio9"></p>
+        </div>
       </div>
     </section>
 
-
-<!-- ejercicio10 -->
+    <!-- ejercicio10 -->
 
     <section id="section10">
       <div class="container container2">
-        <span>Edades Estudiantes</span>
+        <span>Edades Estudiantes (promedio: manana, tarde, noche)</span>
+
         <div>
-          
-          <label for="edades-manana">Edades del turno mañana:</label>
-          <input type="number" id="edades-manana" class="edades-manana"><br>
-                  
-          <label for="edades-tarde">Edades del turno tarde:</label>
-          <input type="number" id="edades-tarde" class="edades-tarde"><br>
-                  
-          <label for="edades-noche">Edades del turno noche:</label>
-          <input type="number" id="edades-noche" class="edades-noche"><br>
-                  
-          <button type="button" onclick="calcularPromedio()">Calcular promedio de edades</button>
-        
-                
-        <div class="data-estudiante"></div>
 
-     
-          
+          <span> Ojo cuando oprimas el boton tendras que terminar el proceso para obtener la respuesta</span>
 
-      </div>
+          <button type="button" onclick="solicitarInfo()" class="fa-solid fa-magnifying-glass lupa">
+         
+          </button>
+
+          <p class="data-estudiante"></p>
+        </div>
       </div>
     </section>
 
-
-
-
     <!-- comentarios formulario  -->
 
-    <section id="section9">
+    <section id="section11">
       <div class="container comentario">
+        <div>
         <p>Version beta</p>
         <table class="table">
           <thead>
@@ -393,10 +431,11 @@
           <tbody id="tabla1"></tbody>
         </table>
       </div>
+      </div>
     </section>
 
     <!-- comentarios -->
-    <section id="section11">
+    <section id="section12">
       <div class="container container2">
         <form>
           <div class="mb-3">
@@ -446,7 +485,7 @@
   <script src="./ejecicios/ejercicio7.js"></script>
   <script src="./ejecicios/ejercicio8.js"></script>
   <script src="./ejecicios/ejercicio9.js"></script>
-<script src="./ejecicios/ejercicio10.js"></script>
+  <script src="./ejecicios/ejercicio10.js"></script>
 
   <!-- logica formulario  -->
   <script src="./base/config.js"></script>
